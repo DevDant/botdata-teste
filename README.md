@@ -22,13 +22,13 @@ Uvicorn — Servidor ASGI
 🗂️ Estrutura do Projeto
 
 app/
-├── chart_generator.py      # Geração de gráficos a partir de DataFrames
-├── database.py             # Interface para consultas ao banco de dados
-├── gpt_sql.py              # Lógica de conversão de prompts em SQL via OpenAI
-├── main.py                 # Aplicação FastAPI com renderização de templates
-├── static/                 # Onde os gráficos são salvos
+├── chart_generator.py 
+├── database.py        
+├── gpt_sql.py         
+├── main.py            
+├── static/            
 ├── templates/
-│   └── index.html          # Template HTML principal
+│   index.html         
 
 ⚙️ Instalação
 Clone o repositório:
@@ -39,7 +39,10 @@ cd nome-do-repositorio
 Crie e ative um ambiente virtual:
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+
+source venv/bin/activate
+
+Windows: venv\Scripts\activate
 
 Instale as dependências:
 
@@ -49,7 +52,7 @@ Exporte sua chave da OpenAI para utilizar no projeto.
 
 Ex. da variável:  OPENAI_API_KEY="sua-chave-aqui"  
 
-Execute o servidor:
+Execute o servidor rodando esse comando:
 
 uvicorn app.main:app --reload
 
